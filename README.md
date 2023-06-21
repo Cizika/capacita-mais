@@ -1,10 +1,10 @@
 # App Capacita +
 
 ## Integrantes 
-Alexandre Souza - 12559506
-Gustavo Silva de Oliveira - 12567231
-Lucas Ivars Cadima Ciziks - 12559472
-Paloma Botto de Medeiros Serrão - 12689641
+* Alexandre Souza - 12559506
+* Gustavo Silva de Oliveira - 12567231
+* Lucas Ivars Cadima Ciziks - 12559472
+* Paloma Botto de Medeiros Serrão - 12689641
 
 ## Motivação
 
