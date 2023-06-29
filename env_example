@@ -1,0 +1,5 @@
+USERNAME = <your-username>
+PASSWORD = <your-password>
+HOST = <host>
+PORT = <port>
+SERVICE_NAME = <service-name>

@@ -24,13 +24,11 @@ def connect_db() -> oracledb.Connection:
     try:
         # Estabelecendo conexão com o banco
         connection = oracledb.connect(user=username, password=password, params=params)
+        return connection
     except oracledb.OperationalError:
         print(
             "Não foi possível realizar a conexão com o banco (Verifique a VPN da USP)"
         )
-
-    return connection
-
 
 def main():
     print("--------------------------------------------------")
@@ -69,6 +67,7 @@ def main():
         except Exception as e:
             print("Erro inesperado. Encerrando conexão...")
             print(f"Mensagem do erro: {e}")
+            connection.rollback()
             connection.close()
             break
 
