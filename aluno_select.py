@@ -25,6 +25,9 @@ def search_by_email(connection: oracledb.Connection):
             print(f"CEP: {aluno[8]}")
             print(f"UF: {aluno[9]}")
             print(f"Complemento: {aluno[10]}")
+            print(f"Escolaridade: {aluno[11]}")
+            print(f"Experiência Profissonal: {aluno[12]}")
+
 
             grupos_aluno = cursor.execute(SELECT_GRUPO_BY_EMAIL, email=email)
             grupos = ", ".join([grupo[0] for grupo in grupos_aluno])

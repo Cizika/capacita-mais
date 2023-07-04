@@ -147,6 +147,8 @@ def insert_aluno(connection: oracledb.Connection):
 
             # Commmitando mudanças
             connection.commit()
+            print(f"Alune {aluno_data['nome']} cadastrado com sucesso!")
+
     except oracledb.IntegrityError as e:
         print("Erro de Integridade: ", e)
         connection.rollback()

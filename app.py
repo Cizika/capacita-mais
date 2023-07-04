@@ -37,7 +37,7 @@ def main():
     print("Estabelecendo conexão com o Banco...")
     connection = connect_db()
 
-    while True:
+    while True and connection:
         print("--------------------------------------------------")
         print("1. Cadastrar novo Aluno")
         print("2. Pesquisar alunos pelo E-mail")
